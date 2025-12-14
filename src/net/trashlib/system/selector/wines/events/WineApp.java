@@ -20,7 +20,7 @@ public class WineApp {
     } while (option != 0 );
   }
 
-  private void displayMessage() {
+  public void displayMessage() {
     MessagesUtils messages = new MessagesUtils();
     System.out.println(messages.getWelcomeMessage());
     System.out.println(messages.getMessageInitial());
@@ -32,6 +32,18 @@ public class WineApp {
 
   private void processOption(int option) {
     switch (option) {
+        case 1:
+            break;
+        case 2:
+            break;
+        default:
+            /*
+            * TODO
+            * Mejorar la forma de mostrar el mensaje de error, sin necesidad de tener otro objeto.
+            */
+            MessagesUtils messagesUtils = new MessagesUtils();
+            System.out.println(messagesUtils.getErrorMessage());
+            break;
     }
   }
 }
