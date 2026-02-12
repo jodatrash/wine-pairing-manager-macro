@@ -1,1 +1,1 @@
-# SS-vinos
+# wine-pairing-manager-macro
