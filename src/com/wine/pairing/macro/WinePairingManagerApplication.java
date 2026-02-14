@@ -1,15 +1,12 @@
-package com.wine.main;
+package com.wine.pairing.macro;
 
-import com.wine.view.Menu;
-import com.wine.manager.ClassManager;
+import com.wine.pairing.macro.view.ConsoleMenu;
+import com.wine.pairing.macro.services.ManagerWineService;
 
 public class WinePairingManagerApplication {
     public static void main(String[] args) {
-        ClassManager classManager = new ClassManager();
-        Menu menu = new Menu(classManager);
+        ManagerWineService classManager = new ManagerWineService();
+        ConsoleMenu menu = new ConsoleMenu(classManager);
         menu.display();
-
-        WineType wineList = new WineType();
-        wineList.getWineList();
     }
 }
