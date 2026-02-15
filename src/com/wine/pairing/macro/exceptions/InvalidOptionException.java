@@ -1,4 +1,7 @@
 package com.wine.pairing.macro.exceptions;
 
-public class InvalidOptionException {
+public class InvalidOptionException extends Exception {
 }
+
+
+
