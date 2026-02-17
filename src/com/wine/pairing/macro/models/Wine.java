@@ -11,8 +11,5 @@ public class Wine {
         this.type = type;
         this.noAlcohol = noAlcohol;
         this.withAlcohol = withAlcohol;
-
     }
-
-
 }
